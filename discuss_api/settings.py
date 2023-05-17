@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/4.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
-
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -153,3 +153,5 @@ REST_FRAMEWORK = {
     "DATE_FORMAT": "Y-m-d",
     "TIME_FORMAT": "%H:%M:%S"
 }
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
